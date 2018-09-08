@@ -1,0 +1,92 @@
+{
+  "id": "7423896b-4819-4f49-87fe-95d39fd06112",
+  "version": "1.1",
+  "name": "Untitled Project",
+  "url": "http://htmlpreview.github.io",
+  "tests": [{
+    "id": "39d71c76-ba8a-4578-aec0-fa8719f39b44",
+    "name": "Untitled",
+    "commands": [{
+      "id": "e7a7fd3a-dd8b-468e-9fe5-b72023ed9310",
+      "comment": "",
+      "command": "open",
+      "target": "/?https://raw.githubusercontent.com/jayree/selenium-loop-test/master/looptest.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3f6e75c7-348c-4c62-abc5-d0a745fb7fee",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//input[@id='edit' and @disabled]",
+      "targets": [
+        ["id=edit", "id"],
+        ["css=#edit", "css"],
+        ["xpath=//input[@id='edit']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "count"
+    }, {
+      "id": "4c0b41c7-376c-4311-a808-1b0a44e5cf70",
+      "comment": "",
+      "command": "do",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e6a05460-2d34-421f-941a-b9c1791b3d42",
+      "comment": "",
+      "command": "echo",
+      "target": "${count}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8454814d-72a7-4d95-8ca3-857bd13f02b3",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//input[@id='edit' and @disabled]",
+      "targets": [
+        ["id=edit", "id"],
+        ["css=#edit", "css"],
+        ["xpath=//input[@id='edit']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "count"
+    }, {
+      "id": "7ce4a53c-a62e-48a1-b878-f19c7e1e7065",
+      "comment": "",
+      "command": "repeatIf",
+      "target": "${count} > 0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5cd4630a-c02e-410d-aad3-2ad21343e5e3",
+      "comment": "",
+      "command": "click",
+      "target": "id=edit",
+      "targets": [
+        ["id=edit", "id"],
+        ["css=#edit", "css"],
+        ["xpath=//input[@id='edit']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae6196a4-ee9c-4dcd-a817-f456ae4fdbf7",
+      "comment": "",
+      "command": "pause",
+      "target": "10000",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "34d7b4f4-f6f5-4a25-b7ee-7cb42f116796",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["39d71c76-ba8a-4578-aec0-fa8719f39b44"]
+  }],
+  "urls": ["http://htmlpreview.github.io/"],
+  "plugins": []
+}
