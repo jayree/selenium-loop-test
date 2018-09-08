@@ -1,31 +1,20 @@
 <!DOCTYPE html>
 <html>
         <head>
-        <title>Test</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <script type="text/javascript">
-        function enableCheckboxafter10s() {
-            setTimeout(function () {
-                    // alert('ok');
-                    document.getElementById("edit").disabled = false;                                   
-            }, 20000);
-        }
-        window.onload = enableCheckboxafter10s;
-        </script>
-    </head>
+                <title>Test</title>
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                <script type="text/javascript">
+                        function enableCheckboxafter10s() {
+                                setTimeout(function () {
+                                        document.getElementById("edit").disabled = false;                                   
+                                }, 10000);
+                        }
+                        window.onload = enableCheckboxafter10s;
+                </script>
+        </head>
 <body>
 
-Checkbox: <input type="checkbox" id="edit" disabled>
-
-<p>Click the "Try it" button to enable the checkbox.</p>
-
-<button onclick="myFunction()">Try it</button>
-
-<script>
-function myFunction() {
-    document.getElementById("edit").disabled = false;
-}
-</script>
+        Checkbox: <input type="checkbox" id="edit" disabled>
 
 </body>
 </html>
